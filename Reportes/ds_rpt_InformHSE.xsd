@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_rpt_InformHSE" targetNamespace="http://tempuri.org/ds_rpt_InformHSE.xsd" xmlns:mstns="http://tempuri.org/ds_rpt_InformHSE.xsd" xmlns="http://tempuri.org/ds_rpt_InformHSE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_rpt_InformHSE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_rpt_InformHSE" msprop:Generator_UserDSName="ds_rpt_InformHSE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="_02_T03NFORME_HSE_PROYECTOS" msprop:Generator_TableClassName="_02_T03NFORME_HSE_PROYECTOSDataTable" msprop:Generator_TableVarName="table_02_T03NFORME_HSE_PROYECTOS" msprop:Generator_TablePropName="_02_T03NFORME_HSE_PROYECTOS" msprop:Generator_RowDeletingName="_02_T03NFORME_HSE_PROYECTOSRowDeleting" msprop:Generator_RowChangingName="_02_T03NFORME_HSE_PROYECTOSRowChanging" msprop:Generator_RowEvHandlerName="_02_T03NFORME_HSE_PROYECTOSRowChangeEventHandler" msprop:Generator_RowDeletedName="_02_T03NFORME_HSE_PROYECTOSRowDeleted" msprop:Generator_UserTableName="_02_T03NFORME_HSE_PROYECTOS" msprop:Generator_RowChangedName="_02_T03NFORME_HSE_PROYECTOSRowChanged" msprop:Generator_RowEvArgName="_02_T03NFORME_HSE_PROYECTOSRowChangeEvent" msprop:Generator_RowClassName="_02_T03NFORME_HSE_PROYECTOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_02_T03Id_ReporteCasos" msprop:Generator_ColumnVarNameInTable="column_02_T03Id_ReporteCasos" msprop:Generator_ColumnPropNameInRow="_02_T03Id_ReporteCasos" msprop:Generator_ColumnPropNameInTable="_02_T03Id_ReporteCasosColumn" msprop:Generator_UserColumnName="_02_T03Id_ReporteCasos" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Id_Informe" msprop:Generator_ColumnVarNameInTable="column_02_T03Id_Informe" msprop:Generator_ColumnPropNameInRow="_02_T03Id_Informe" msprop:Generator_ColumnPropNameInTable="_02_T03Id_InformeColumn" msprop:Generator_UserColumnName="_02_T03Id_Informe" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03FechaRegistro" msprop:Generator_ColumnVarNameInTable="column_02_T03FechaRegistro" msprop:Generator_ColumnPropNameInRow="_02_T03FechaRegistro" msprop:Generator_ColumnPropNameInTable="_02_T03FechaRegistroColumn" msprop:Generator_UserColumnName="_02_T03FechaRegistro" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03usuarioRegistra" msprop:Generator_ColumnVarNameInTable="column_02_T03usuarioRegistra" msprop:Generator_ColumnPropNameInRow="_02_T03usuarioRegistra" msprop:Generator_ColumnPropNameInTable="_02_T03usuarioRegistraColumn" msprop:Generator_UserColumnName="_02_T03usuarioRegistra" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03NumCtoMarco" msprop:Generator_ColumnVarNameInTable="column_02_T03NumCtoMarco" msprop:Generator_ColumnPropNameInRow="_02_T03NumCtoMarco" msprop:Generator_ColumnPropNameInTable="_02_T03NumCtoMarcoColumn" msprop:Generator_UserColumnName="_02_T03NumCtoMarco" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Mes" msprop:Generator_ColumnVarNameInTable="column_02_T03Mes" msprop:Generator_ColumnPropNameInRow="_02_T03Mes" msprop:Generator_ColumnPropNameInTable="_02_T03MesColumn" msprop:Generator_UserColumnName="_02_T03Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03FechaSemana_Inicio" msprop:Generator_ColumnVarNameInTable="column_02_T03FechaSemana_Inicio" msprop:Generator_ColumnPropNameInRow="_02_T03FechaSemana_Inicio" msprop:Generator_ColumnPropNameInTable="_02_T03FechaSemana_InicioColumn" msprop:Generator_UserColumnName="_02_T03FechaSemana_Inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03FechaSemana_Final" msprop:Generator_ColumnVarNameInTable="column_02_T03FechaSemana_Final" msprop:Generator_ColumnPropNameInRow="_02_T03FechaSemana_Final" msprop:Generator_ColumnPropNameInTable="_02_T03FechaSemana_FinalColumn" msprop:Generator_UserColumnName="_02_T03FechaSemana_Final" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Depto" msprop:Generator_ColumnVarNameInTable="column_02_T03Depto" msprop:Generator_ColumnPropNameInRow="_02_T03Depto" msprop:Generator_ColumnPropNameInTable="_02_T03DeptoColumn" msprop:Generator_UserColumnName="_02_T03Depto" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Municipio" msprop:Generator_ColumnVarNameInTable="column_02_T03Municipio" msprop:Generator_ColumnPropNameInRow="_02_T03Municipio" msprop:Generator_ColumnPropNameInTable="_02_T03MunicipioColumn" msprop:Generator_UserColumnName="_02_T03Municipio" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03ODS" msprop:Generator_ColumnVarNameInTable="column_02_T03ODS" msprop:Generator_ColumnPropNameInRow="_02_T03ODS" msprop:Generator_ColumnPropNameInTable="_02_T03ODSColumn" msprop:Generator_UserColumnName="_02_T03ODS" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03AreaCliente" msprop:Generator_ColumnVarNameInTable="column_02_T03AreaCliente" msprop:Generator_ColumnPropNameInRow="_02_T03AreaCliente" msprop:Generator_ColumnPropNameInTable="_02_T03AreaClienteColumn" msprop:Generator_UserColumnName="_02_T03AreaCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03ActividadesEjecutadas" msprop:Generator_ColumnVarNameInTable="column_02_T03ActividadesEjecutadas" msprop:Generator_ColumnPropNameInRow="_02_T03ActividadesEjecutadas" msprop:Generator_ColumnPropNameInTable="_02_T03ActividadesEjecutadasColumn" msprop:Generator_UserColumnName="_02_T03ActividadesEjecutadas" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Id_EstadisticaDiaria" msprop:Generator_ColumnVarNameInTable="column_02_T03Id_EstadisticaDiaria" msprop:Generator_ColumnPropNameInRow="_02_T03Id_EstadisticaDiaria" msprop:Generator_ColumnPropNameInTable="_02_T03Id_EstadisticaDiariaColumn" msprop:Generator_UserColumnName="_02_T03Id_EstadisticaDiaria" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Id_Personal" msprop:Generator_ColumnVarNameInTable="column_02_T03Id_Personal" msprop:Generator_ColumnPropNameInRow="_02_T03Id_Personal" msprop:Generator_ColumnPropNameInTable="_02_T03Id_PersonalColumn" msprop:Generator_UserColumnName="_02_T03Id_Personal" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Id_SeguridadVial" msprop:Generator_ColumnVarNameInTable="column_02_T03Id_SeguridadVial" msprop:Generator_ColumnPropNameInRow="_02_T03Id_SeguridadVial" msprop:Generator_ColumnPropNameInTable="_02_T03Id_SeguridadVialColumn" msprop:Generator_UserColumnName="_02_T03Id_SeguridadVial" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03Id_RegistroFotografico" msprop:Generator_ColumnVarNameInTable="column_02_T03Id_RegistroFotografico" msprop:Generator_ColumnPropNameInRow="_02_T03Id_RegistroFotografico" msprop:Generator_ColumnPropNameInTable="_02_T03Id_RegistroFotograficoColumn" msprop:Generator_UserColumnName="_02_T03Id_RegistroFotografico" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0030_2_T03ResponsableInforme" msprop:Generator_ColumnVarNameInTable="column02_T03ResponsableInforme" msprop:Generator_ColumnPropNameInRow="_02_T03ResponsableInforme" msprop:Generator_ColumnPropNameInTable="_02_T03ResponsableInformeColumn" msprop:Generator_UserColumnName="02_T03ResponsableInforme" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T03ComentariosFinales" msprop:Generator_ColumnVarNameInTable="column_02_T03ComentariosFinales" msprop:Generator_ColumnPropNameInRow="_02_T03ComentariosFinales" msprop:Generator_ColumnPropNameInTable="_02_T03ComentariosFinalesColumn" msprop:Generator_UserColumnName="_02_T03ComentariosFinales" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

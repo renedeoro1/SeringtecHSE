@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{ABE4BBD8-71D0-4BDC-A08C-148882E8A9E4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HSENUEVO</RootNamespace>
+    <AssemblyName>HSENUEVO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HSENUEVO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HSENUEVO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\..\Downloads\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\..\..\..\..\Downloads\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Area.aspx" />
+    <Content Include="ATL2.aspx" />
+    <Content Include="AtLAccion.aspx" />
+    <Content Include="AtlOrigenmejora.aspx" />
+    <Content Include="Atlproces.aspx" />
+    <Content Include="AtlResponsable.aspx" />
+    <Content Include="CalculosMecanica.aspx" />
+    <Content Include="ConsultaInformeHSE.aspx" />
+    <Content Include="css\bootstrap-colorpicker.css" />
+    <Content Include="css\bootstrap-datepicker.css" />
+    <Content Include="css\bootstrap-min.css" />
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\Capture.css" />
+    <Content Include="css\daterangepicker.css" />
+    <Content Include="css\elegant-icons-style.css" />
+    <Content Include="css\elfinder.min.css" />
+    <Content Include="css\elfinder.theme.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\fullcalendar.css" />
+    <Content Include="css\GridviewScroll.css" />
+    <Content Include="css\icons-sprite.css" />
+    <Content Include="css\index.html" />
+    <Content Include="css\jquery-jvectormap-1.2.2.css" />
+    <Content Include="css\jquery-ui-1.10.4.min.css" />
+    <Content Include="css\jquery-ui-1.8.16.custom.css" />
+    <Content Include="css\jquery.jqplot.css" />
+    <Content Include="css\jquery.plupload.queue.css" />
+    <Content Include="css\line-icons.css" />
+    <Content Include="css\notificationmsg.css" />
+    <Content Include="css\odontograma\jquery-ui-1.8.17.custom.css" />
+    <Content Include="css\odontograma\jquery.svg.css" />
+    <Content Include="css\odontograma\odontograma.css" />
+    <Content Include="css\odontograma\style.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\prettify.css" />
+    <Content Include="css\pure-min.css" />
+    <Content Include="css\select2.css" />
+    <Content Include="css\style-default.css" />
+    <Content Include="css\style-responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\themes.css" />
+    <Content Include="css\udf\custom\custom.css" />
+    <Content Include="css\udf\jquery-ui.css" />
+    <Content Include="css\udf\plain\icon.gif" />
+    <Content Include="css\udf\plain\plain.css" />
+    <Content Include="css\udf\plain\text-bg.gif" />
+    <Content Include="css\udf\sexy\icon.gif" />
+    <Content Include="css\udf\sexy\sexy.css" />
+    <Content Include="css\udf\sexy\text-bg.gif" />
+    <Content Include="css\udf\ufd-base.css" />
+    <Content Include="css\udf\uiCss\uiCss.css" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\ui-lightness\jquery-ui-1.8.20.custom.css" />
+    <Content Include="css\widgets.css" />
+    <Content Include="css\xcharts.min.css" />
+    <Content Include="Estadistica.aspx" />
+    <Content Include="HSG.vbproj.user" />
+    <Content Include="HUB.aspx" />
+    <Content Include="iconos\AccionAtl.png" />
+    <Content Include="iconos\AddItem.png" />
+    <Content Include="iconos\AddItem2.png" />
+    <Content Include="iconos\Area.png" />
+    <Content Include="iconos\atl.png" />
+    <Content Include="iconos\ATLInfor.png" />
+    <Content Include="iconos\btnAnular.png" />
+    <Content Include="iconos\btnAplazada.png" />
+    <Content Include="iconos\btnAprobar.png" />
+    <Content Include="iconos\btnAsegurar.png" />
+    <Content Include="iconos\btnAsistida.png" />
+    <Content Include="iconos\btnAyuda.png" />
+    <Content Include="iconos\btnCancelada.png" />
+    <Content Include="iconos\btnCargar.png" />
+    <Content Include="iconos\btnCargarDatos.png" />
+    <Content Include="iconos\btnConsentimientos.png" />
+    <Content Include="iconos\btnCopago.png" />
+    <Content Include="iconos\btnDescargar.png" />
+    <Content Include="iconos\btnDocumento.png" />
+    <Content Include="iconos\btnEliminar.png" />
+    <Content Include="iconos\btnEmail.png" />
+    <Content Include="iconos\btnEpicrisis.png" />
+    <Content Include="iconos\btnFactura.png" />
+    <Content Include="iconos\btnFirmar.png" />
+    <Content Include="iconos\btnGuardar.png" />
+    <Content Include="iconos\btnGuardar1.png" />
+    <Content Include="iconos\btnGuardarEspecial.png" />
+    <Content Include="iconos\btnImprimir.png" />
+    <Content Include="iconos\btnImprimirAntigua.png" />
+    <Content Include="iconos\btnImprimirCita.png" />
+    <Content Include="iconos\btnImprimirCompleta.png" />
+    <Content Include="iconos\btnImprimirConcepto.png" />
+    <Content Include="iconos\btnImprimirConsolidado.png" />
+    <Content Include="iconos\btnImprimirCotizacion.png" />
+    <Content Include="iconos\btnImprimirDetallado.png" />
+    <Content Include="iconos\btnImprimirHistoria.png" />
+    <Content Include="iconos\btnImprimirHistoriaSO.png" />
+    <Content Include="iconos\btnImprimirListado.png" />
+    <Content Include="iconos\btnImprimirRelacion.png" />
+    <Content Include="iconos\btnImprimirUtilidades.png" />
+    <Content Include="iconos\btnIncumplida.png" />
+    <Content Include="iconos\btnInforme.png" />
+    <Content Include="iconos\btnInformeQuirurgico.png" />
+    <Content Include="iconos\btnLaboratorio.png" />
+    <Content Include="iconos\btnLimpiar.png" />
+    <Content Include="iconos\btnNotaCredito.png" />
+    <Content Include="iconos\btnNotaDebito.png" />
+    <Content Include="iconos\btnNuevaConsulta.png" />
+    <Content Include="iconos\btnNuevoPaciente.png" />
+    <Content Include="iconos\btnOrdenServicios.png" />
+    <Content Include="iconos\btnPago.png" />
+    <Content Include="iconos\btnRechazar.png" />
+    <Content Include="iconos\btnRegistroAnestesico.png" />
+    <Content Include="iconos\btnSalir.png" />
+    <Content Include="iconos\btnUtilidades.png" />
+    <Content Include="iconos\cerrarsesion.png" />
+    <Content Include="iconos\cerrarsesion2.png" />
+    <Content Include="iconos\cerrarVentana.png" />
+    <Content Include="iconos\Chat-Eliminar.png" />
+    <Content Include="iconos\clave1.png" />
+    <Content Include="iconos\configuracion.png" />
+    <Content Include="iconos\ConsultarInforme.png" />
+    <Content Include="iconos\desbloqueo2.png" />
+    <Content Include="iconos\descarga.png" />
+    <Content Include="iconos\encabezado.png" />
+    <Content Include="iconos\encabezado1.png" />
+    <Content Include="iconos\enviarapobacion.png" />
+    <Content Include="iconos\escan1.png" />
+    <Content Include="iconos\espirometro.png" />
+    <Content Include="iconos\Estadistica.png" />
+    <Content Include="iconos\exit3.png" />
+    <Content Include="iconos\exit5.png" />
+    <Content Include="iconos\favicon.ico" />
+    <Content Include="iconos\fonoudilogiaTotal.png" />
+    <Content Include="iconos\Format_Acot1.png" />
+    <Content Include="iconos\funcioanrios2.png" />
+    <Content Include="iconos\Icono_lupa.png" />
+    <Content Include="iconos\impresora.png" />
+    <Content Include="iconos\InformeHSE.png" />
+    <Content Include="iconos\InformhHSE1.png" />
+    <Content Include="iconos\logoHSEGrande.jpg" />
+    <Content Include="iconos\logoHSEGrandeok2.png" />
+    <Content Include="iconos\logoHSEGrandeok3.png" />
+    <Content Include="iconos\logohseOK.png" />
+    <Content Include="iconos\logoHSG.png" />
+    <Content Include="iconos\LUPAOK.png" />
+    <Content Include="iconos\MejoraOrigen.png" />
+    <Content Include="iconos\MensajeBien.png" />
+    <Content Include="iconos\MensajeMal.png" />
+    <Content Include="iconos\mensual.png" />
+    <Content Include="iconos\Novedades1.png" />
+    <Content Include="iconos\ontime2.png" />
+    <Content Include="iconos\ontimeok.png" />
+    <Content Include="iconos\Personal.png" />
+    <Content Include="iconos\Registro_foto.png" />
+    <Content Include="iconos\Reporte_casos.png" />
+    <Content Include="iconos\salida.png" />
+    <Content Include="iconos\search-icon.png" />
+    <Content Include="iconos\Sede.png" />
+    <Content Include="iconos\Seguridad_Vial.png" />
+    <Content Include="iconos\Semaforo_Amarillo.jpg" />
+    <Content Include="iconos\Semaforo_Naranja.jpg" />
+    <Content Include="iconos\Semaforo_Rojo.jpg" />
+    <Content Include="iconos\Semaforo_Verde.jpg" />
+    <Content Include="iconos\SinFirma.png" />
+    <Content Include="iconos\Sinfoto.png" />
+    <Content Include="iconos\SinHuella.png" />
+    <Content Include="iconos\timesheeTitulo.png" />
+    <Content Include="iconos\Tipo_Accion.png" />
+    <Content Include="iconos\tituloHSE.png" />
+    <Content Include="iconos\usuario10.png" />
+    <Content Include="iconos\Vehiculo1.png" />
+    <Content Include="images\agenda.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\altura.png" />
+    <Content Include="images\altura_reporte.png" />
+    <Content Include="images\borrador.png" />
+    <Content Include="images\Celda vertical y horizontal.png" />
+    <Content Include="images\Celda Verticales.png" />
+    <Content Include="images\Celda.png" />
+    <Content Include="images\Celda1.png" />
+    <Content Include="images\CeldaCirculo.png" />
+    <Content Include="images\CeldaCirculo_P.png" />
+    <Content Include="images\cinco.png" />
+    <Content Include="images\CincoTem.png" />
+    <Content Include="images\cinco_p.png" />
+    <Content Include="images\circuloRelleno.png" />
+    <Content Include="images\cuadrado.png" />
+    <Content Include="images\cuadradoRelleno.png" />
+    <Content Include="images\cuatro.png" />
+    <Content Include="images\CuatroTem.png" />
+    <Content Include="images\cuatro_p.png" />
+    <Content Include="images\dibujo.png" />
+    <Content Include="images\dos.png" />
+    <Content Include="images\DosTem.png" />
+    <Content Include="images\dos_p.png" />
+    <Content Include="images\Equis.png" />
+    <Content Include="images\EquisFinal.png" />
+    <Content Include="images\image2.gif" />
+    <Content Include="images\lapiz.png" />
+    <Content Include="images\linea.png" />
+    <Content Include="images\new.png" />
+    <Content Include="images\nueve.png" />
+    <Content Include="images\nueveTem.png" />
+    <Content Include="images\nueve_p.png" />
+    <Content Include="images\ocho.png" />
+    <Content Include="images\ochoTem.png" />
+    <Content Include="images\ocho_p.png" />
+    <Content Include="images\opacity100.png" />
+    <Content Include="images\opacity50.png" />
+    <Content Include="images\pruebas.wmf" />
+    <Content Include="images\PuntoInicial.png" />
+    <Content Include="images\redo.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\seis.png" />
+    <Content Include="images\SeisTem.png" />
+    <Content Include="images\seis_p.png" />
+    <Content Include="images\siete.png" />
+    <Content Include="images\SieteTem.png" />
+    <Content Include="images\siete_p.png" />
+    <Content Include="images\spray.png" />
+    <Content Include="images\TituloGraficaVertical.png" />
+    <Content Include="images\tres.png" />
+    <Content Include="images\TresTem.png" />
+    <Content Include="images\tres_p.png" />
+    <Content Include="images\Triangulo1.png" />
+    <Content Include="images\Triangulo1_P.png" />
+    <Content Include="images\Triangulo2.png" />
+    <Content Include="images\Triangulo2_P.png" />
+    <Content Include="images\Triangulo3.png" />
+    <Content Include="images\Triangulo3_P.png" />
+    <Content Include="images\undo.png" />
+    <Content Include="images\uno.png" />
+    <Content Include="images\UnoTem.png" />
+    <Content Include="images\uno_p.png" />
+    <Content Include="img\alert.png" />
+    <Content Include="img\alpha.png" />
+    <Content Include="img\arrow-up.png" />
+    <Content Include="img\arrows-active.png" />
+    <Content Include="img\arrows-normal.png" />
+    <Content Include="img\avatar-mini.jpg" />
+    <Content Include="img\avatar-mini2.jpg" />
+    <Content Include="img\avatar-mini3.jpg" />
+    <Content Include="img\avatar-mini4.jpg" />
+    <Content Include="img\avatar1.jpg" />
+    <Content Include="img\avatar1_small.jpg" />
+    <Content Include="img\bg-1 - copia %282%29.jpg" />
+    <Content Include="img\bg-1 - copia.jpg" />
+    <Content Include="img\bg-1-2.jpg" />
+    <Content Include="img\bg-1.jpg" />
+    <Content Include="img\bg-122 - copia.jpg" />
+    <Content Include="img\bg-122.jpg" />
+    <Content Include="img\bg-12233 %281%29 - copia.jpg" />
+    <Content Include="img\bg-12233 %281%29.png" />
+    <Content Include="img\bg-1333.jpg" />
+    <Content Include="img\bg-14.jpg" />
+    <Content Include="img\bg-19.jpg" />
+    <Content Include="img\bg.png" />
+    <Content Include="img\bubble.png" />
+    <Content Include="img\buttons.gif" />
+    <Content Include="img\chart-texture.jpg" />
+    <Content Include="img\chart.png" />
+    <Content Include="img\chat-avatar.jpg" />
+    <Content Include="img\chat-avatar2.jpg" />
+    <Content Include="img\checked.png" />
+    <Content Include="img\chosen-sprite.png" />
+    <Content Include="img\closed.png" />
+    <Content Include="img\CodigoQR.png" />
+    <Content Include="img\collapse.gif" />
+    <Content Include="img\colorbox-img\border.png" />
+    <Content Include="img\colorbox-img\controls.png" />
+    <Content Include="img\colorbox-img\ie6\borderBottomCenter.png" />
+    <Content Include="img\colorbox-img\ie6\borderBottomLeft.png" />
+    <Content Include="img\colorbox-img\ie6\borderBottomRight.png" />
+    <Content Include="img\colorbox-img\ie6\borderMiddleLeft.png" />
+    <Content Include="img\colorbox-img\ie6\borderMiddleRight.png" />
+    <Content Include="img\colorbox-img\ie6\borderTopCenter.png" />
+    <Content Include="img\colorbox-img\ie6\borderTopLeft.png" />
+    <Content Include="img\colorbox-img\ie6\borderTopRight.png" />
+    <Content Include="img\colorbox-img\loading.gif" />
+    <Content Include="img\colorbox-img\loading_background.png" />
+    <Content Include="img\colorbox-img\overlay.png" />
+    <Content Include="img\complete.png" />
+    <Content Include="img\crop.gif" />
+    <Content Include="img\customSelect-arrow.gif" />
+    <Content Include="img\dialogs.png" />
+    <Content Include="img\down.png" />
+    <Content Include="img\flag-icons\ad.png" />
+    <Content Include="img\flag-icons\ae.png" />
+    <Content Include="img\flag-icons\af.png" />
+    <Content Include="img\flag-icons\ag.png" />
+    <Content Include="img\flag-icons\ai.png" />
+    <Content Include="img\flag-icons\al.png" />
+    <Content Include="img\flag-icons\am.png" />
+    <Content Include="img\flag-icons\an.png" />
+    <Content Include="img\flag-icons\ao.png" />
+    <Content Include="img\flag-icons\ar.png" />
+    <Content Include="img\flag-icons\as.png" />
+    <Content Include="img\flag-icons\at.png" />
+    <Content Include="img\flag-icons\au.png" />
+    <Content Include="img\flag-uk.png" />
+    <Content Include="img\footer-back.jpg" />
+    <Content Include="img\fr.png" />
+    <Content Include="img\furley_bg.png" />
+    <Content Include="img\gb.png" />
+    <Content Include="img\geekslabs.png" />
+    <Content Include="img\Germany.png" />
+    <Content Include="img\glyphicons-halflings %281%29.png" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\go.png" />
+    <Content Include="img\green-arrow %281%29.png" />
+    <Content Include="img\green-arrow.png" />
+    <Content Include="img\home.jpg" />
+    <Content Include="img\hue.png" />
+    <Content Include="img\IconHome.gif" />
+    <Content Include="img\icons-big.png" />
+    <Content Include="img\icons-small.png" />
+    <Content Include="img\icons\line-icon-c.png" />
+    <Content Include="img\icons\line-icon-hover.png" />
+    <Content Include="img\icons\line-icon.png" />
+    <Content Include="img\icons\Nueva carpeta\bg-122 - copia.jpg" />
+    <Content Include="img\icons\Nueva carpeta\bg-12233 %281%29 %281%29.jpg" />
+    <Content Include="img\icons\Nueva carpeta\bg-12233 %281%29 %281%29.png" />
+    <Content Include="img\icons\Nueva carpeta\bg-12233 %281%29.jpg" />
+    <Content Include="img\icons\Nueva carpeta\bg-12233 %281%29.png" />
+    <Content Include="img\icons\Nueva carpeta\bg-12233.jpg" />
+    <Content Include="img\icons\Nueva carpeta\bg-12233.png" />
+    <Content Include="img\icons\search-line-icon.png" />
+    <Content Include="img\icons\social.png" />
+    <Content Include="img\icons\weather-hover.png" />
+    <Content Include="img\icons\weather.png" />
+    <Content Include="img\img-raty\cancel-off-big.png" />
+    <Content Include="img\img-raty\cancel-off.png" />
+    <Content Include="img\img-raty\cancel-on-big.png" />
+    <Content Include="img\img-raty\cancel-on.png" />
+    <Content Include="img\img-raty\face-a-off.png" />
+    <Content Include="img\img-raty\face-a.png" />
+    <Content Include="img\img-raty\face-b-off.png" />
+    <Content Include="img\img-raty\face-b.png" />
+    <Content Include="img\img-raty\face-c-off.png" />
+    <Content Include="img\img-raty\face-c.png" />
+    <Content Include="img\img-raty\face-d-off.png" />
+    <Content Include="img\img-raty\face-d.png" />
+    <Content Include="img\img-raty\face-off.png" />
+    <Content Include="img\img-raty\medal-off.png" />
+    <Content Include="img\img-raty\medal-on.png" />
+    <Content Include="img\img-raty\star-half-big.png" />
+    <Content Include="img\img-raty\star-half.png" />
+    <Content Include="img\img-raty\star-off-big.png" />
+    <Content Include="img\img-raty\star-off.png" />
+    <Content Include="img\img-raty\star-on-big.png" />
+    <Content Include="img\img-raty\star-on.png" />
+    <Content Include="img\India.png" />
+    <Content Include="img\it.png" />
+    <Content Include="img\items.png" />
+    <Content Include="img\left-arrow.png" />
+    <Content Include="img\lightpaperfibers.png" />
+    <Content Include="img\light_toast.png" />
+    <Content Include="img\light_wool.png" />
+    <Content Include="img\list-icons\alarm.png" />
+    <Content Include="img\list-icons\ask.png" />
+    <Content Include="img\list-icons\award.png" />
+    <Content Include="img\list-icons\bulb.png" />
+    <Content Include="img\list-icons\clip.png" />
+    <Content Include="img\list-icons\err.png" />
+    <Content Include="img\list-icons\flag.png" />
+    <Content Include="img\list-icons\folder.png" />
+    <Content Include="img\list-icons\globe.png" />
+    <Content Include="img\list-icons\heart.png" />
+    <Content Include="img\list-icons\info.png" />
+    <Content Include="img\list-icons\medal-gold.png" />
+    <Content Include="img\list-icons\pin.png" />
+    <Content Include="img\list-icons\plus.png" />
+    <Content Include="img\list-icons\tick.png" />
+    <Content Include="img\list-icons\trophy.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\logo %282%29.png" />
+    <Content Include="img\logo-big.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logo2.png" />
+    <Content Include="img\LOGO3.png" />
+    <Content Include="img\LOGO4.png" />
+    <Content Include="img\LOGO6.png" />
+    <Content Include="img\logoGrande.png" />
+    <Content Include="img\logoGrande2.png" />
+    <Content Include="img\mail-avatar.jpg" />
+    <Content Include="img\open.png" />
+    <Content Include="img\orders.png" />
+    <Content Include="img\page-back.jpg" />
+    <Content Include="img\posts.png" />
+    <Content Include="img\profile-avatar.jpg" />
+    <Content Include="img\profile-widget-avatar.jpg" />
+    <Content Include="img\progress.gif" />
+    <Content Include="img\progress.png" />
+    <Content Include="img\progressbar.gif" />
+    <Content Include="img\quicklook-bg.png" />
+    <Content Include="img\quicklook-icons.png" />
+    <Content Include="img\red-arrow.png" />
+    <Content Include="img\resize.png" />
+    <Content Include="img\right-arrow.png" />
+    <Content Include="img\Russia.png" />
+    <Content Include="img\sa.png" />
+    <Content Include="img\sample-img-1.jpg" />
+    <Content Include="img\sample-img-2.png" />
+    <Content Include="img\sample-img-3.png" />
+    <Content Include="img\saturation.png" />
+    <Content Include="img\search-box.png" />
+    <Content Include="img\search-icon.jpg" />
+    <Content Include="img\search-icon.png" />
+    <Content Include="img\search-text-box.png" />
+    <Content Include="img\shipped.png" />
+    <Content Include="img\sidenav-sprite.png" />
+    <Content Include="img\sistemas-gestion-almacenes.jpg" />
+    <Content Include="img\smartplant3d.jpg" />
+    <Content Include="img\smartplant3d1.jpg" />
+    <Content Include="img\smartplantelectrical.jpg" />
+    <Content Include="img\smartplantInstrumentacion.jpg" />
+    <Content Include="img\smartplantPiping.jpg" />
+    <Content Include="img\Spain.png" />
+    <Content Include="img\spinner-mini.gif" />
+    <Content Include="img\sprite-icons\action-sprite.png" />
+    <Content Include="img\sprite-icons\actions-small.png" />
+    <Content Include="img\sprite-icons\black_24.png" />
+    <Content Include="img\sprite-icons\cs_h.png" />
+    <Content Include="img\sprite-icons\dashboard-icons-dark.png" />
+    <Content Include="img\sprite-icons\extras\icon-black.png" />
+    <Content Include="img\sprite-icons\extras\icon16_color_cr.png" />
+    <Content Include="img\sprite-icons\extras\icon24x24black.png" />
+    <Content Include="img\sprite-icons\extras\icon32x32black.png" />
+    <Content Include="img\sprite-icons\extras\icons-a.png" />
+    <Content Include="img\sprite-icons\extras\icons-color.png" />
+    <Content Include="img\sprite-icons\extras\icons-glossy.png" />
+    <Content Include="img\sprite-icons\extras\icon_color_clr.png" />
+    <Content Include="img\sprite-icons\extras\icon_grb24x24.png" />
+    <Content Include="img\sprite-icons\extras\icon_sl.png" />
+    <Content Include="img\sprite-icons\extras\uniform-sprite.png" />
+    <Content Include="img\sprite-icons\extras\white-icons.png" />
+    <Content Include="img\table-tools\background.png" />
+    <Content Include="img\table-tools\collection.png" />
+    <Content Include="img\table-tools\collection_hover.png" />
+    <Content Include="img\table-tools\copy.png" />
+    <Content Include="img\table-tools\copy_hover.png" />
+    <Content Include="img\table-tools\csv.png" />
+    <Content Include="img\table-tools\csv_hover.png" />
+    <Content Include="img\table-tools\pdf.png" />
+    <Content Include="img\table-tools\pdf_hover.png" />
+    <Content Include="img\table-tools\print.png" />
+    <Content Include="img\table-tools\print_hover.png" />
+    <Content Include="img\table-tools\table.gif" />
+    <Content Include="img\table-tools\xls.png" />
+    <Content Include="img\table-tools\xls_hover.png" />
+    <Content Include="img\tbl-img\back_disabled.png" />
+    <Content Include="img\tbl-img\back_enabled.png" />
+    <Content Include="img\tbl-img\back_enabled_hover.png" />
+    <Content Include="img\tbl-img\forward_disabled.png" />
+    <Content Include="img\tbl-img\forward_enabled.png" />
+    <Content Include="img\tbl-img\forward_enabled_hover.png" />
+    <Content Include="img\tbl-img\sort_asc.png" />
+    <Content Include="img\tbl-img\sort_asc_disabled.png" />
+    <Content Include="img\tbl-img\sort_both.png" />
+    <Content Include="img\tbl-img\sort_desc.png" />
+    <Content Include="img\tbl-img\sort_desc_disabled.png" />
+    <Content Include="img\tbl-img\toolbar.gif" />
+    <Content Include="img\toolbar %281%29.gif" />
+    <Content Include="img\toolbar.gif" />
+    <Content Include="img\toolbar.png" />
+    <Content Include="img\ui\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="img\ui\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="img\ui\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="img\ui\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="img\ui\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="img\ui\ui-icons_222222_256x240.png" />
+    <Content Include="img\ui\ui-icons_2e83ff_256x240.png" />
+    <Content Include="img\ui\ui-icons_454545_256x240.png" />
+    <Content Include="img\ui\ui-icons_888888_256x240.png" />
+    <Content Include="img\ui\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="img\ui\ui-icons_f6cf3b_256x240.png" />
+    <Content Include="img\up.png" />
+    <Content Include="img\us.png" />
+    <Content Include="img\user-accounts.png" />
+    <Content Include="img\user-thumb.png" />
+    <Content Include="img\user.jpg" />
+    <Content Include="img\user22.png" />
+    <Content Include="img\white_bed_sheet.png" />
+    <Content Include="InformeMensual.aspx" />
+    <Content Include="InformHSE.aspx" />
+    <Content Include="ItemEstadistica.aspx" />
+    <Content Include="js\accordion.jquery.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\browserplus-min.js" />
+    <Content Include="js\canvasdraw.js" />
+    <Content Include="js\canvasdrawRegistroAnestesico.js" />
+    <Content Include="js\capture.js" />
+    <Content Include="js\chart\jqplot.cursor.min.js" />
+    <Content Include="js\chart\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="js\chart\jqplot.highlighter.min.js" />
+    <Content Include="js\check-all.jquery.js" />
+    <Content Include="js\chosen.jquery.js" />
+    <Content Include="js\ColVis.min.js" />
+    <Content Include="js\controlador.js" />
+    <Content Include="js\custom-script.js" />
+    <Content Include="js\data-table.jquery.js" />
+    <Content Include="js\elfinder.min.js" />
+    <Content Include="js\elfinder\elfinder.min.js" />
+    <Content Include="js\eventosTable.js" />
+    <Content Include="js\excanvas.min.js" />
+    <Content Include="js\fullcalendar.js" />
+    <Content Include="js\gridviewScroll.min.js" />
+    <Content Include="js\guardando-pngs.js" />
+    <Content Include="js\inputmask.jquery.js" />
+    <Content Include="js\ios-orientationchange-fix.js" />
+    <Content Include="js\jquery-1.6.1.min.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery-1.8.2.js" />
+    <Content Include="js\jquery-dynamic-form.js" />
+    <Content Include="js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="js\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="js\jquery.cleditor.min.js" />
+    <Content Include="js\jquery.colorbox-min.js" />
+    <Content Include="js\jquery.eComboBox.min.js" />
+    <Content Include="js\jquery.jqplot.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.nicescroll.min.js" />
+    <Content Include="js\jquery.noty.js" />
+    <Content Include="js\jquery.sparkline.min.js" />
+    <Content Include="js\jquery.tagsinput.js" />
+    <Content Include="js\jquery.ui.touch-punch.js" />
+    <Content Include="js\jqueryRadio.min.js" />
+    <Content Include="js\notify.js" />
+    <Content Include="js\notify.min.js" />
+    <Content Include="js\odontograma\canvg.js" />
+    <Content Include="js\odontograma\jquery-1.7.1.min.js" />
+    <Content Include="js\odontograma\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="js\odontograma\jquery.svg.min.js" />
+    <Content Include="js\odontograma\jquery.svggraph.min.js" />
+    <Content Include="js\odontograma\jquery.tmpl.js" />
+    <Content Include="js\odontograma\knockout-2.0.0.js" />
+    <Content Include="js\odontograma\modernizr-2.0.6.min.js" />
+    <Content Include="js\odontograma\odontograma.js" />
+    <Content Include="js\odontograma\plugins.js" />
+    <Content Include="js\odontograma\raphael-min.js" />
+    <Content Include="js\odontograma\rgbcolor.js" />
+    <Content Include="js\odontograma\StackBlur.js" />
+    <Content Include="js\plupload.full.js" />
+    <Content Include="js\plupupload\jquery.plupload.queue\css\jquery.plupload.queue.css\jquery.plupload.queue.css" />
+    <Content Include="js\plupupload\jquery.plupload.queue\jquery.plupload.queue.js" />
+    <Content Include="js\prettify.js" />
+    <Content Include="js\raty.jquery.js" />
+    <Content Include="js\resaltar.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="ZZZ.aspx" />
+    <Content Include="HSG.vbproj" />
+    <None Include="js\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="js\Scripts\jquery-1.4.1.js" />
+    <Content Include="js\Scripts\jquery-1.4.1.min.js" />
+    <None Include="js\Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="js\Scripts\jquery-1.4.4.js" />
+    <Content Include="js\Scripts\jquery-1.4.4.min.js" />
+    <Content Include="js\Scripts\jquery-ui-1.8.13.js" />
+    <Content Include="js\Scripts\jquery-ui-1.8.13.min.js" />
+    <Content Include="js\Scripts\jquery.quicksearch.js" />
+    <Content Include="js\Scripts\jquery.ui.ufd.js" />
+    <Content Include="js\Scripts\jquery.ui.ufd.min.js" />
+    <Content Include="js\smart-wizard.jquery.js" />
+    <Content Include="js\TableTools.min.js" />
+    <Content Include="js\ui.core.js" />
+    <Content Include="js\ui.notificationmsg.js" />
+    <Content Include="js\uniform.jquery.js" />
+    <Content Include="js\vaidation.jquery.js" />
+    <Content Include="js\webcam\jquery.webcam.js" />
+    <Content Include="js\webcam\jquery.webcam.min.js" />
+    <Content Include="js\webcam\jscam.swf" />
+    <Content Include="js\webcam\jscam_canvas_only.swf" />
+    <Content Include="js\webcam\src\jscam.xml" />
+    <Content Include="login.aspx" />
+    <Content Include="PerfilesxUsuarios.aspx" />
+    <Content Include="Personal.aspx" />
+    <Content Include="plataforma.aspx" />
+    <Content Include="RegristroFotografico.aspx" />
+    <Content Include="reportesCasos.aspx" />
+    <Content Include="reportesCasosRPT.aspx" />
+    <Content Include="Sede.aspx" />
+    <Content Include="Seguridad_vial.aspx" />
+    <Content Include="sinpermiso.aspx" />
+    <Content Include="tipoaccion.aspx" />
+    <Content Include="Tipovehiculo.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="z-MenusPrueba.aspx" />
+    <Content Include="zPruebas.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area.aspx.designer.vb">
+      <DependentUpon>Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Area.aspx.vb">
+      <DependentUpon>Area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ATL2.aspx.designer.vb">
+      <DependentUpon>ATL2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ATL2.aspx.vb">
+      <DependentUpon>ATL2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AtLAccion.aspx.designer.vb">
+      <DependentUpon>AtLAccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AtLAccion.aspx.vb">
+      <DependentUpon>AtLAccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AtlOrigenmejora.aspx.designer.vb">
+      <DependentUpon>AtlOrigenmejora.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AtlOrigenmejora.aspx.vb">
+      <DependentUpon>AtlOrigenmejora.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Atlproces.aspx.designer.vb">
+      <DependentUpon>Atlproces.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Atlproces.aspx.vb">
+      <DependentUpon>Atlproces.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AtlResponsable.aspx.designer.vb">
+      <DependentUpon>AtlResponsable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AtlResponsable.aspx.vb">
+      <DependentUpon>AtlResponsable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalculosMecanica.aspx.designer.vb">
+      <DependentUpon>CalculosMecanica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalculosMecanica.aspx.vb">
+      <DependentUpon>CalculosMecanica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaInformeHSE.aspx.designer.vb">
+      <DependentUpon>ConsultaInformeHSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaInformeHSE.aspx.vb">
+      <DependentUpon>ConsultaInformeHSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DB.vb" />
+    <Compile Include="Estadistica.aspx.designer.vb">
+      <DependentUpon>Estadistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Estadistica.aspx.vb">
+      <DependentUpon>Estadistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HUB.aspx.designer.vb">
+      <DependentUpon>HUB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HUB.aspx.vb">
+      <DependentUpon>HUB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformeMensual.aspx.designer.vb">
+      <DependentUpon>InformeMensual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformeMensual.aspx.vb">
+      <DependentUpon>InformeMensual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformHSE.aspx.designer.vb">
+      <DependentUpon>InformHSE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformHSE.aspx.vb">
+      <DependentUpon>InformHSE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemEstadistica.aspx.designer.vb">
+      <DependentUpon>ItemEstadistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEstadistica.aspx.vb">
+      <DependentUpon>ItemEstadistica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PerfilesxUsuarios.aspx.designer.vb">
+      <DependentUpon>PerfilesxUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilesxUsuarios.aspx.vb">
+      <DependentUpon>PerfilesxUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal.aspx.designer.vb">
+      <DependentUpon>Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.aspx.vb">
+      <DependentUpon>Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="plataforma.aspx.designer.vb">
+      <DependentUpon>plataforma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="plataforma.aspx.vb">
+      <DependentUpon>plataforma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegristroFotografico.aspx.designer.vb">
+      <DependentUpon>RegristroFotografico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegristroFotografico.aspx.vb">
+      <DependentUpon>RegristroFotografico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportesCasos.aspx.designer.vb">
+      <DependentUpon>reportesCasos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportesCasos.aspx.vb">
+      <DependentUpon>reportesCasos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportesCasosRPT.aspx.designer.vb">
+      <DependentUpon>reportesCasosRPT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reportesCasosRPT.aspx.vb">
+      <DependentUpon>reportesCasosRPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\ds_rpt_InformeMensualxsd.Designer.vb" />
+    <Compile Include="Reportes\ds_rpt_InformHSE.Designer.vb" />
+    <Compile Include="Reportes\ds_rpt_Reporte_Casos.Designer.vb" />
+    <Compile Include="Reportes\rpt_InformeHSE1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_InformeHSE.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rpt_InformeMensual1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_InformeMensual.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rpt_Reporte_Casos1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Reporte_Casos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sede.aspx.designer.vb">
+      <DependentUpon>Sede.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sede.aspx.vb">
+      <DependentUpon>Sede.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seguridad_vial.aspx.designer.vb">
+      <DependentUpon>Seguridad_vial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad_vial.aspx.vb">
+      <DependentUpon>Seguridad_vial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sinpermiso.aspx.designer.vb">
+      <DependentUpon>sinpermiso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sinpermiso.aspx.vb">
+      <DependentUpon>sinpermiso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tipoaccion.aspx.designer.vb">
+      <DependentUpon>tipoaccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tipoaccion.aspx.vb">
+      <DependentUpon>tipoaccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tipovehiculo.aspx.designer.vb">
+      <DependentUpon>Tipovehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tipovehiculo.aspx.vb">
+      <DependentUpon>Tipovehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="z-MenusPrueba.aspx.designer.vb">
+      <DependentUpon>z-MenusPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="z-MenusPrueba.aspx.vb">
+      <DependentUpon>z-MenusPrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zPruebas.aspx.designer.vb">
+      <DependentUpon>zPruebas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zPruebas.aspx.vb">
+      <DependentUpon>zPruebas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ZZZ.aspx.designer.vb">
+      <DependentUpon>ZZZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZZZ.aspx.vb">
+      <DependentUpon>ZZZ.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rpt_InformeHSE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_InformeHSE1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rpt_InformeMensual.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_InformeMensual1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rpt_Reporte_Casos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Reporte_Casos1.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxControlToolkit.config" />
+    <Content Include="app.config" />
+    <Content Include="css\ui-lightness\images\Thumbs.db" />
+    <Content Include="iconos.zip" />
+    <Content Include="images\Celda vertical y horizontal.pxd" />
+    <Content Include="images\Celda Verticales.pxd" />
+    <Content Include="images\Thumbs.db" />
+    <Content Include="img\colorbox-img\Thumbs.db" />
+    <Content Include="img\flag-icons\Thumbs.db" />
+    <Content Include="img\img-raty\Thumbs.db" />
+    <Content Include="img\list-icons\Thumbs.db" />
+    <Content Include="img\logoGrande.psd" />
+    <Content Include="img\sprite-icons\Thumbs.db" />
+    <Content Include="img\table-tools\Thumbs.db" />
+    <Content Include="img\tbl-img\Thumbs.db" />
+    <Content Include="img\Thumbs.db" />
+    <Content Include="js\webcam\bower.json" />
+    <Content Include="js\webcam\Makefile" />
+    <Content Include="js\webcam\README.md" />
+    <Content Include="js\webcam\src\BitString.as" />
+    <Content Include="js\webcam\src\JPGEncoder.as" />
+    <Content Include="js\webcam\src\jscam.as" />
+    <Content Include="js\webcam\webcam.jquery.json" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Reportes\ds_rpt_InformeMensualxsd.xsc">
+      <DependentUpon>ds_rpt_InformeMensualxsd.xsd</DependentUpon>
+    </Content>
+    <None Include="Reportes\ds_rpt_InformeMensualxsd.xsd" />
+    <Content Include="Reportes\ds_rpt_InformeMensualxsd.xss">
+      <DependentUpon>ds_rpt_InformeMensualxsd.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reportes\ds_rpt_InformHSE.xsc">
+      <DependentUpon>ds_rpt_InformHSE.xsd</DependentUpon>
+    </Content>
+    <None Include="Reportes\ds_rpt_InformHSE.xsd" />
+    <Content Include="Reportes\ds_rpt_InformHSE.xss">
+      <DependentUpon>ds_rpt_InformHSE.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reportes\ds_rpt_Reporte_Casos.xsc">
+      <DependentUpon>ds_rpt_Reporte_Casos.xsd</DependentUpon>
+    </Content>
+    <None Include="Reportes\ds_rpt_Reporte_Casos.xsd" />
+    <Content Include="Reportes\ds_rpt_Reporte_Casos.xss">
+      <DependentUpon>ds_rpt_Reporte_Casos.xsd</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63040</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

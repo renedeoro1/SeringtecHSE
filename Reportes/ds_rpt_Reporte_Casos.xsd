@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ds_rpt_Reporte_Casos" targetNamespace="http://tempuri.org/ds_rpt_Reporte_Casos.xsd" xmlns:mstns="http://tempuri.org/ds_rpt_Reporte_Casos.xsd" xmlns="http://tempuri.org/ds_rpt_Reporte_Casos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ds_rpt_Reporte_Casos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ds_rpt_Reporte_Casos" msprop:Generator_UserDSName="ds_rpt_Reporte_Casos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_rpt_Reporte_Casos" msprop:Generator_TableClassName="DT_rpt_Reporte_CasosDataTable" msprop:Generator_TableVarName="tableDT_rpt_Reporte_Casos" msprop:Generator_TablePropName="DT_rpt_Reporte_Casos" msprop:Generator_RowDeletingName="DT_rpt_Reporte_CasosRowDeleting" msprop:Generator_RowChangingName="DT_rpt_Reporte_CasosRowChanging" msprop:Generator_RowEvHandlerName="DT_rpt_Reporte_CasosRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_rpt_Reporte_CasosRowDeleted" msprop:Generator_UserTableName="DT_rpt_Reporte_Casos" msprop:Generator_RowChangedName="DT_rpt_Reporte_CasosRowChanged" msprop:Generator_RowEvArgName="DT_rpt_Reporte_CasosRowChangeEvent" msprop:Generator_RowClassName="DT_rpt_Reporte_CasosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_02_T01Id_Reporte" msprop:Generator_ColumnVarNameInTable="column_02_T01Id_Reporte" msprop:Generator_ColumnPropNameInRow="_02_T01Id_Reporte" msprop:Generator_ColumnPropNameInTable="_02_T01Id_ReporteColumn" msprop:Generator_UserColumnName="_02_T01Id_Reporte" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01FechaRegistro" msprop:Generator_ColumnVarNameInTable="column_02_T01FechaRegistro" msprop:Generator_ColumnPropNameInRow="_02_T01FechaRegistro" msprop:Generator_ColumnPropNameInTable="_02_T01FechaRegistroColumn" msprop:Generator_UserColumnName="_02_T01FechaRegistro" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01DocUsuarioRegistra" msprop:Generator_ColumnVarNameInTable="column_02_T01DocUsuarioRegistra" msprop:Generator_ColumnPropNameInRow="_02_T01DocUsuarioRegistra" msprop:Generator_ColumnPropNameInTable="_02_T01DocUsuarioRegistraColumn" msprop:Generator_UserColumnName="_02_T01DocUsuarioRegistra" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01Fecha" msprop:Generator_ColumnVarNameInTable="column_02_T01Fecha" msprop:Generator_ColumnPropNameInRow="_02_T01Fecha" msprop:Generator_ColumnPropNameInTable="_02_T01FechaColumn" msprop:Generator_UserColumnName="_02_T01Fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01Hora" msprop:Generator_ColumnVarNameInTable="column_02_T01Hora" msprop:Generator_ColumnPropNameInRow="_02_T01Hora" msprop:Generator_ColumnPropNameInTable="_02_T01HoraColumn" msprop:Generator_UserColumnName="_02_T01Hora" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01Id_TipoAccion2" msprop:Generator_ColumnVarNameInTable="column_02_T01Id_TipoAccion2" msprop:Generator_ColumnPropNameInRow="_02_T01Id_TipoAccion2" msprop:Generator_ColumnPropNameInTable="_02_T01Id_TipoAccion2Column" msprop:Generator_UserColumnName="_02_T01Id_TipoAccion2" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01LugarEvento" msprop:Generator_ColumnVarNameInTable="column_02_T01LugarEvento" msprop:Generator_ColumnPropNameInRow="_02_T01LugarEvento" msprop:Generator_ColumnPropNameInTable="_02_T01LugarEventoColumn" msprop:Generator_UserColumnName="_02_T01LugarEvento" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01DescripcionEvento" msprop:Generator_ColumnVarNameInTable="column_02_T01DescripcionEvento" msprop:Generator_ColumnPropNameInRow="_02_T01DescripcionEvento" msprop:Generator_ColumnPropNameInTable="_02_T01DescripcionEventoColumn" msprop:Generator_UserColumnName="_02_T01DescripcionEvento" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01SugerenciaEvento" msprop:Generator_ColumnVarNameInTable="column_02_T01SugerenciaEvento" msprop:Generator_ColumnPropNameInRow="_02_T01SugerenciaEvento" msprop:Generator_ColumnPropNameInTable="_02_T01SugerenciaEventoColumn" msprop:Generator_UserColumnName="_02_T01SugerenciaEvento" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01Id_Area" msprop:Generator_ColumnVarNameInTable="column_02_T01Id_Area" msprop:Generator_ColumnPropNameInRow="_02_T01Id_Area" msprop:Generator_ColumnPropNameInTable="_02_T01Id_AreaColumn" msprop:Generator_UserColumnName="_02_T01Id_Area" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01Id_Sede" msprop:Generator_ColumnVarNameInTable="column_02_T01Id_Sede" msprop:Generator_ColumnPropNameInRow="_02_T01Id_Sede" msprop:Generator_ColumnPropNameInTable="_02_T01Id_SedeColumn" msprop:Generator_UserColumnName="_02_T01Id_Sede" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01Dependenia" msprop:Generator_ColumnVarNameInTable="column_02_T01Dependenia" msprop:Generator_ColumnPropNameInRow="_02_T01Dependenia" msprop:Generator_ColumnPropNameInTable="_02_T01DependeniaColumn" msprop:Generator_UserColumnName="_02_T01Dependenia" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01PersonaReporta_Nombre" msprop:Generator_ColumnVarNameInTable="column_02_T01PersonaReporta_Nombre" msprop:Generator_ColumnPropNameInRow="_02_T01PersonaReporta_Nombre" msprop:Generator_ColumnPropNameInTable="_02_T01PersonaReporta_NombreColumn" msprop:Generator_UserColumnName="_02_T01PersonaReporta_Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="_02_T01PersonaReporta_Contacto" msprop:Generator_ColumnVarNameInTable="column_02_T01PersonaReporta_Contacto" msprop:Generator_ColumnPropNameInRow="_02_T01PersonaReporta_Contacto" msprop:Generator_ColumnPropNameInTable="_02_T01PersonaReporta_ContactoColumn" msprop:Generator_UserColumnName="_02_T01PersonaReporta_Contacto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
