@@ -891,7 +891,7 @@
                                                     <tr>
                                                         <td class="auto-style9" style="border-style: solid; text-decoration: none; color: #000000;">
                                                             <asp:Label ID="lbl_01_T02Esfuerzocircunferencialbarrilmenor" runat="server" Font-Bold="True" Font-Size="10pt" Text="Esfuerzo circunferencial de prueba barril menor" Visible="true"></asp:Label>
-                                                            CLONFUNCIONA</td>
+                                                            Rama</td>
                                                         <td class="auto-style11" style="border-style: solid; text-decoration: none; color: #000000;">SHt2</td>
                                                         <td class="auto-style26" style="border-style: solid; text-decoration: none; color: #000000;"><strong>
                                                             <asp:TextBox ID="txt_01_T02Esfuerzocircunferencialbarrilmenor" runat="server"></asp:TextBox>
