@@ -296,7 +296,7 @@
                                                                 <asp:Image ID="Image1" runat="server" ImageUrl="~/iconos/calculo.png" Height="90px" Width="135px" />
                                                             </td>
                                                             <td>
-                                                                <h1>Cálculos MecanicaMiguel</h1>
+                                                                <h1>Cálculos MecanicaRené</h1>
                                                             </td>
                                                         </tr>
                                                     </table>
